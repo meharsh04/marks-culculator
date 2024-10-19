@@ -1,0 +1,36 @@
+#include <stdio.h>
+
+int main()
+{
+    float english;
+    float hindi;
+    float maths;
+    float computer;
+    float c_program;
+    float marks;
+    float percentage;
+
+    printf("Enter The English Marks Out Of 100 : \t");
+    scanf("%f", &english);
+
+    printf("Enter The hindi Marks Out Of 100: \t");
+    scanf("%f", &hindi);
+
+    printf("Enter The maths Marks Out Of 100: \t");
+    scanf("%f", &maths);
+
+    printf("Enter The computer Marks Out Of 100: \t");
+    scanf("%f", &computer);
+
+    printf("Enter The c_program marks Out Of 100: \t");
+    scanf("%f", &c_program);
+
+    marks = english + hindi + maths + computer + c_program ;
+
+    percentage = (marks/500) * 100;
+
+    printf(" Total Marks Out Of 100: %f \t", marks);
+    printf("Percentage You Got : %f \t", percentage);
+
+    return 0;
+}
